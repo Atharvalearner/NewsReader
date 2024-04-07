@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardElevation="8dp"
-                android:layout_marginTop="8dp">
+                android:layout_margin="8dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -34,15 +34,17 @@
                         android:id="@+id/text_detail_title"
                         android:textColor="@color/black"
                         android:textStyle="bold"
+                        android:padding="10dp"
                         android:textSize="26dp">
                         
                     </TextView>
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         android:id="@+id/img_detail_news"
                         android:scaleType="fitXY"
-                        android:src="@drawable/error"
+                        android:src="@drawable/noimage"
                         android:layout_marginTop="8dp">
 
                     </ImageView>
@@ -52,6 +54,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/text_detail_author"
                         android:layout_marginTop="6dp"
+                        android:padding="6dp"
                         android:textColor="@color/purple"
                         android:textSize="16dp"/>
 
@@ -59,27 +62,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/text_detail_time"
-                        android:layout_marginTop="6dp"
+                        android:layout_margin="8dp"
+                        android:padding="6dp"
                         android:textColor="@color/black"
                         android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_detail_detail"
+                        android:layout_margin="8dp"
+                        android:padding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_detail_content"
+                        android:layout_margin="8dp"
+                        android:padding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_detail_detail"
-                android:layout_marginTop="6dp"
-                android:textColor="@color/black"
-                android:textSize="22dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_detail_content"
-                android:layout_marginTop="6dp"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

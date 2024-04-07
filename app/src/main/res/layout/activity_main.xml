@@ -7,25 +7,73 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<!--    <HorizontalScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="6dp">-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            -->
-<!--            <Button-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:id="@+id/btn1"-->
-<!--                android:text="India"-->
-<!--                android:textSize="15dp"-->
-<!--                android:textStyle="italic"/>-->
-<!--        </LinearLayout>-->
-<!--            -->
-<!--    </HorizontalScrollView>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1"
+                android:text="Business"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2"
+                android:text="Entertainment"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3"
+                android:text="General"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_4"
+                android:text="Health"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_5"
+                android:text="Science"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_6"
+                android:text="Sports"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_7"
+                android:text="Technology"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

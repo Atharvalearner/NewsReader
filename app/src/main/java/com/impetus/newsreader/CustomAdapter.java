@@ -1,5 +1,6 @@
 package com.impetus.newsreader;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,7 +34,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CustomViewHolder holder, @SuppressLint("RecyclerView") int position) {
         NewsHeadlines currentHeadline = headlines.get(position);
 
 
@@ -53,7 +54,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
             Picasso.get()
                     .load(currentHeadline.getUriToImage())
                     .placeholder(R.drawable.placeholder) // Placeholder image resource ID
-                    .error(R.drawable.error) // Error image resource ID
+                    .error(R.drawable.noimage) // Error image resource ID
                     .into(holder.image_headline, new Callback() {
                         @Override
                         public void onSuccess() {
