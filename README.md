@@ -1,1 +1,1 @@
-For More Details contact me on Linkdin.
+For More details Contact in Linkedin.
